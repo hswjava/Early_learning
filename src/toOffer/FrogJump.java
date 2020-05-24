@@ -4,8 +4,8 @@ public class FrogJump {
 	public int JumpFloor(int target) {
 		int sum = 0;
 		for (int i = target, j = 0; i > 0; i = i - 2, j++) {
-			System.out.println("有" + i + "个一步和" + j + "个两步");
-			System.out.println("一共有" + calc(i, i + j) + "种跳法");
+			System.out.println("??" + i + "???????" + j + "??????");
+			System.out.println("?????" + calc(i, i + j) + "??????");
 
 				sum += calc(i, i + j);
 		

@@ -3,7 +3,7 @@ package toOffer;
 import java.util.Stack;
 
 /**
- * 用两个栈表示队列
+ * 锟斤拷锟斤拷锟斤拷栈锟斤拷示锟斤拷锟斤拷
  * @author swhe
  *
  */
@@ -16,13 +16,13 @@ public class StackToQueue {
 	}
 
 	public int pop() {
-		// 先将栈1全部push到栈2
+		// 锟饺斤拷栈1全锟斤拷push锟斤拷栈2
 		while (!stack1.isEmpty()) {
 			stack2.push(stack1.pop());
 		}
-		// 取栈2的第一个数，相当于栈1的反向
+		// 取栈2锟侥碉拷一锟斤拷锟斤拷锟斤拷锟洁当锟斤拷栈1锟侥凤拷锟斤拷
 		int first = stack2.pop();
-		// 再将栈1还原
+		// 锟劫斤拷栈1锟斤拷原
 		while (!stack2.isEmpty()) {
 			stack1.push(stack2.pop());
 		}

@@ -28,7 +28,7 @@ public class TestRandomFrame extends JFrame {
 		this.skinLabel = new JLabel("Skin:");
 		this.nameText = new JTextArea("            ");
 		this.skinText = new JTextArea("            ");
-		this.updateButton = new JButton("抽奖");
+		this.updateButton = new JButton("??");
 		JPanel panel = new JPanel();
 		panel.setLayout(new FlowLayout());
 		panel.add(this.nameLabel);
@@ -64,18 +64,18 @@ public class TestRandomFrame extends JFrame {
 	
 	public void setList() {
 		this.nameList = new ArrayList<String>();
-		this.nameList.add("烟花易落");
-		this.nameList.add("烟花不落");
-		this.nameList.add("无边若木");
-		this.nameList.add("蓝菲杰");
+		this.nameList.add("???????");
+		this.nameList.add("???????");
+		this.nameList.add("??????");
+		this.nameList.add("?????");
 		this.nameList.add("skpskp");
-		this.nameList.add("陈菊涛哥.avi");
+		this.nameList.add("????θ?.avi");
 		
 		this.skinList = new ArrayList<String>();
-		this.skinList.add("未来战士EZ");
-		this.skinList.add("至高之拳盲僧");
-		this.skinList.add("钢铁军团拉克丝");
-		this.skinList.add("胜利女神希维尔");
-		this.skinList.add("猩红之月基兰");
+		this.skinList.add("δ????EZ");
+		this.skinList.add("????????");
+		this.skinList.add("?????????????");
+		this.skinList.add("??????????");
+		this.skinList.add("?????????");
 	}
 }
