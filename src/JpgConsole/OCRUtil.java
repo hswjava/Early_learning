@@ -11,7 +11,7 @@ public class OCRUtil {
 
     private final String LANG_OPTION = "-l";  //英文字母小写l，并非阿拉伯数字1
     private final String EOL = System.getProperty("line.separator");
-    private String tessPath = "C:\\Program Files (x86)\\Tesseract-OCR";//ocr的安装路径
+    private String tessPath = "F:\\workspace\\Early_learning\\src\\JpgConsole\\Tesseract-OCR";//ocr的安装路径
 
     public OCRUtil(String tessPath,String transFileName){
         this.tessPath=tessPath;
