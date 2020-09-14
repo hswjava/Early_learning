@@ -57,9 +57,6 @@ public class TestRandomFrame extends JFrame {
 		TestRandomFrame frame = new TestRandomFrame();
 		frame.setSize(600, 300);
 		frame.setVisible(true);
-		while (true) {
-
-		}
 	}
 	
 	public void setList() {
@@ -72,9 +69,16 @@ public class TestRandomFrame extends JFrame {
 		this.nameList.add("陈菊涛哥.avi");
 		
 		this.skinList = new ArrayList<String>();
-		this.skinList.add("未来战士EZ");
-		this.skinList.add("钢铁军团拉克丝");
-		this.skinList.add("猩红之月基兰");
+		this.skinList.add("未来战士 EZ");
+		this.skinList.add("钢铁军团 拉克丝");
+		this.skinList.add("腥红之月 烬");
+		this.skinList.add("西部牛仔 亚索");
+		this.skinList.add("西部魔影 德莱厄斯");
+		this.skinList.add("宇航员 诺提勒斯");
+		this.skinList.add("屠龙勇士 赵信");
+		this.skinList.add("源计划 联合");
+		this.skinList.add("灌篮高手 德莱厄斯");
+		this.skinList.add("源计划 雷 卢锡安");
 
 	}
 }
