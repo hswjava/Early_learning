@@ -24,11 +24,11 @@ public class TestRandomFrame extends JFrame {
 	private JButton updateButton = null;
 
 	TestRandomFrame() {
-		this.nameLabel = new JLabel("Name:");
-		this.skinLabel = new JLabel("Skin:");
+		this.nameLabel = new JLabel("今天:");
+		this.skinLabel = new JLabel("请客吃:");
 		this.nameText = new JTextArea("            ");
 		this.skinText = new JTextArea("            ");
-		this.updateButton = new JButton("抽奖");
+		this.updateButton = new JButton("suprise");
 		JPanel panel = new JPanel();
 		panel.setLayout(new FlowLayout());
 		panel.add(this.nameLabel);
@@ -61,24 +61,23 @@ public class TestRandomFrame extends JFrame {
 	
 	public void setList() {
 		this.nameList = new ArrayList<String>();
-		this.nameList.add("烟花易落");
-		this.nameList.add("烟花不落");
-		this.nameList.add("蓝菲杰");
-		this.nameList.add("无边若木");
-		this.nameList.add("skpskp");
-		this.nameList.add("陈菊涛哥.avi");
+		this.nameList.add("Frank");
+		this.nameList.add("萌萌子");
+		this.nameList.add("反麦劳派-灭顶师太（板烧堡除外");
+		this.nameList.add("不常联系的sunrui");
+
 		
 		this.skinList = new ArrayList<String>();
-		this.skinList.add("未来战士 EZ");
-		this.skinList.add("钢铁军团 拉克丝");
-		this.skinList.add("腥红之月 烬");
-		this.skinList.add("西部牛仔 亚索");
-		this.skinList.add("西部魔影 德莱厄斯");
-		this.skinList.add("宇航员 诺提勒斯");
-		this.skinList.add("屠龙勇士 赵信");
-		this.skinList.add("源计划 联合");
-		this.skinList.add("灌篮高手 德莱厄斯");
-		this.skinList.add("源计划 雷 卢锡安");
+		this.skinList.add("大螃蟹");
+		this.skinList.add("小酥肉");
+		this.skinList.add("金元宝");
+//		this.skinList.add("西部牛仔 亚索");
+//		this.skinList.add("西部魔影 德莱厄斯");
+//		this.skinList.add("宇航员 诺提勒斯");
+//		this.skinList.add("屠龙勇士 赵信");
+//		this.skinList.add("源计划 联合");
+//		this.skinList.add("灌篮高手 德莱厄斯");
+//		this.skinList.add("源计划 雷 卢锡安");
 
 	}
 }
