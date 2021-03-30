@@ -48,37 +48,29 @@ public class excelTest {
         }catch(Exception e){
             e.printStackTrace();
         }
-
-
         //创建HSSFWorkbook对象
         HSSFWorkbook wb = new HSSFWorkbook();
-
         excelMap.keySet().forEach(key->{
             //创建HSSFSheet对象
             HSSFSheet sheet = wb.createSheet(key);
-
             HashMap map = (HashMap) excelMap.get(key);
             AtomicInteger count = new AtomicInteger();
-            map.keySet().forEach(a->{
-                //创建HSSFRow对象
-                HSSFRow row = sheet.createRow(count.getAndIncrement());
-//创建HSSFCell对象
-                HSSFCell cell=row.createCell(count.getAndIncrement());
-//设置单元格的值
-                cell.setCellValue((String)a);
+            //创建HSSFRow对象
+            HSSFRow row  = sheet.createRow(count.getAndIncrement());
+            map.keySet().forEach(a -> {
+                HSSFCell cardCell = row.createCell(0);
+                HashMap score = (HashMap) map.get((String) a);
+                cardCell.setCellValue((String)score.keySet().iterator().next());
+                //创建HSSFCell对象
+                HSSFCell cell = row.createCell(count.getAndIncrement());
+                //设置单元格的值
+                cell.setCellValue((String) a);
             });
-
         });
-
-
-//输出Excel文件
+        //输出Excel文件
         FileOutputStream output=new FileOutputStream("d:\\workbook.xls");
         wb.write(output);
         output.flush();
-
-
-
-
     }
 
     private static void buildExcelMap (String HeroName,ScoreBean t, Map excelMap) throws IntrospectionException, InvocationTargetException, IllegalAccessException {
