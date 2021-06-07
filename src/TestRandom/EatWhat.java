@@ -24,14 +24,14 @@ public class EatWhat {
         List<String> choicesList = new ArrayList<>();
         JButton updateButton = null;
         if(new Date().getHours()>15) {
-            suggestLabel = new JLabel("Ğ¡Â¹±¦ÍíÉÏ³ÔÉ¶:     ");
+            suggestLabel = new JLabel("æ™šä¸Šåƒå•¥:     ");
         } else {
-            suggestLabel = new JLabel("Ğ¡Â¹±¦ÖĞÎç³ÔÉ¶:     ");
+            suggestLabel = new JLabel("ä¸­åˆåƒå•¥:     ");
         }
         foodText = new JTextArea("            ");
         foodText.setSize(50,30);
         foodText.setTabSize(100);
-        updateButton = new JButton("Ö»ÄÜµãÒ»´ÎÅ¶");
+        updateButton = new JButton("åªèƒ½ç‚¹ä¸€æ¬¡å“¦");
         updateButton.setSize(20,20);
         JPanel panel = new JPanel();
         panel.setLayout(new FlowLayout());
@@ -59,15 +59,15 @@ public class EatWhat {
     }
 
     public static void setList(List choicesList) {
-       choicesList.add("¿ÏµÂ»ù");
-       choicesList.add("ÂéÀ±ÌÌÌÌ");
-       choicesList.add("Å£Èâ·ÛË¿°è·¹£¡");
-       choicesList.add("É³À­");
-       choicesList.add("³´²Ë");
-       choicesList.add("Ã×Ïß");
-       choicesList.add("É¶Ò²²»³Ô£¿£¿");
-//       choicesList.add("ÍâÂô");
-//       choicesList.add("¹ãÎ÷Ã×·Û");
+       choicesList.add("è‚¯å¾·åŸº");
+       choicesList.add("éº»è¾£çƒ«çƒ«");
+       choicesList.add("ç‰›è‚‰ç²‰ä¸æ‹Œé¥­ï¼");
+       choicesList.add("æ²™æ‹‰");
+       choicesList.add("ç‚’èœ");
+       choicesList.add("ç±³çº¿");
+       choicesList.add("å•¥ä¹Ÿä¸åƒï¼Ÿï¼Ÿ");
+//       choicesList.add("å¤–å–");
+//       choicesList.add("å¹¿è¥¿ç±³ç²‰");
     }
 
 
